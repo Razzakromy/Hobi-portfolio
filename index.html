@@ -6,46 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
+    <!-- SLICK NAV MENU -->
+    <link rel="stylesheet" href="resources/css/slicknav.min.css">
+    <!-- PROGRESSBAR -->
+    <link rel="stylesheet" href="resources/css/jquery.rprogessbar.min.css">
+    <!-- MODAL VIDEO -->
+    <link rel="stylesheet" href="resources/css/modal-video.min.css">
+    <!-- SLICK CAROUSEL -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" />
+    <!-- HEADLINE ANIMATED -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
+    <!-- GOOGLE FONT -->
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <!-- BOOTSTRAP 4.5.2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="resources/css/style.css">
     <title>Hobi - Portfolio</title>
 </head>
 
 <body>
     <!-- HEADER SECTION START  -->
-    <header>
-        <div class="header_area ">
+    <header id="sticker">
+        <div class="header_area">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-3 d-flex align-items-center">
+                    <div class="col-xl-2 d-flex justify-content-end align-items-center">
                         <div class="logo">
-                            <a href="index.html"> <img src="resources/img/logo.png" alt="hobi"> </a>
+                            <a href="index.html">
+                                <h1 class="header_logo">Hobi<span style="color: red">.</span></h1>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-xl-6 text-center ">
+                    <div class="col-xl-7 text-center ">
                         <div class="main_menu">
                             <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#">home</a>
-                                        <a href=#>about</a>
-                                        <a href="#">skills</a>
-                                        <a href="#">services</a>
-                                        <a href="#">portfolio</a>
-                                        <a href="#">team</a>
-                                        <a href="#">blog</a>
-                                        <a href="#">contact</a>
-                                    </li>
+                                <ul class="basic_menu" id="menu">
+                                    <li class="current"><a class="active" href="#slider_sec">home</a></li>
+                                    <li><a href=#about_sec>about</a></li>
+                                    <li><a href="#services_sec">services</a></li>
+                                    <li><a href="#skill_sec">skills</a></li>
+                                    <li><a href="#portfolio_sec">portfolio</a></li>
+                                    <li><a href="#team_sec">team</a></li>
+                                    <li><a href="#testimonial_sec">testimonial</a></li>
+                                    <li><a href="#footer_sec">contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -72,18 +87,17 @@
 
     <!-- SLIDER SECTION START -->
 
-
-    <section class="slider_sec">
+    <section id="slider_sec">
         <div class="container">
-            <div class="row slider">
+            <div class="row slider mb-5">
                 <div class="col-xl-12">
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class="col-xl-7">
                                 <div class="slider_content">
                                     <span>Get Every Single Solutions.</span>
-                                    <h2>I’m Designer <br>
-                                       Razzak Romy</h2>
+                                    <h2>I’m <span class="type"></span> <br>
+                                        Razzak Romy</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
                                         incididunt ut labore et dolore magna aliqua.</p>
                                     <div class="slider_btn">
@@ -95,7 +109,9 @@
                                 </div>
                             </div>
                             <div class="col-xl-5">
-                                <img class="manimg" src="resources/img/man.png" alt="">
+                                <div class="animation">
+                                    <img class="manimg" src="resources/img/image12.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -104,19 +120,29 @@
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class="col-xl-5">
-                                <img class="manimg" src="resources/img/man.png" alt="">
+                                <div class="animation">
+                                    <img class="manimg" src="resources/img/image9.png" alt="">
+                                </div>
                             </div>
                             <div class="col-xl-7">
-                                <div class="slider_content">
+                                <div class="slider_content headline_animated">
                                     <span>Get Every Single Solutions.</span>
-                                    <h2>I’m Developer <br>
-                                        Razzak Romy</h2>
+                                    <h2 class="ah-headline">
+                                        <span>I’m </span>
+                                        <span class="ah-words-wrapper">
+                                            <b class="is-visible">Freelancher</b>
+                                            <b>Designer</b>
+                                            <b>Developer</b>
+                                        </span>
+                                        <span>Razzak Romy</span>
+                                    </h2>
+
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
                                         incididunt ut labore et dolore magna aliqua.</p>
                                     <div class="slider_btn">
                                         <a href="#" class="btn">Learn More</a>
-                                        <a href="#" class="video_btn"> <i class="fas fa-play"></i> <span
-                                                class="play">PlAY
+                                        <a href="#" class="video_btn" data-video-id='MFommhp4XVk'> <i
+                                                class="fas fa-play"></i> <span class="play">PlAY
                                                 VIDEO</span></a>
                                     </div>
                                 </div>
@@ -129,13 +155,943 @@
     </section>
     <!-- SLIDER SECTION END -->
 
+    <!-- ABOUT SECTION START -->
+    <section id="about_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 d-flex justify-content-end">
+                    <div class="about">
+                        <span class="mini_text">about me</span>
+                        <h3 class="about_content">Designing <br>
+                            With Passion <br>
+                            While Exploring <br>
+                            The World</h3>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <p class="about_details">I specialize in building complex web applications, leading front-end teams,
+                        digital product
+                        design and developing visual design systems. I enjoy creating effortless user experience and
+                        designing delightful digital products. The entire process of going from a concept to release and
+                        gathering user’s feedback on either client’s or my own products is what makes me wake up
+                        everyday! Nowadays I lead product design at Tapdaq,
+                        previously I worked at Badoo and Socialbakers. </p>
+                    <p class="about_details">Earlier in 2016 I started turning my expertise into building my own digital
+                        design products. This
+                        helped me to learn even more about users and gain a deeper knowledge about launching and selling
+                        stuff as an individual. My best known products across the design community are currently
+                        Dashboard UI Kit 3.0 and Dashboard UI Kit totalling
+                        over 4000 sold copies. </p>
+
+                    <a href="#" class="btn">download cv</a>
+                    <a href="#" class="btn dpbtn">design progress</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+    <hr>
+    <!-- SERVICES SECTION START -->
+    <section id="services_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="border">
+                        <img class="ser_img" src="resources/img/designer.png" alt="">
+                        <h5 class="ser_content">branding & designing</h5>
+                        <p class="ser_details">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+                        <div class="text">
+                            <i class="fab fa-pied-piper ser_icons"></i> <span class="ser_txt"> Logo & Branding</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-globe ser_icons"></i> <span class="ser_txt"> Website Design</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-mobile ser_icons"></i> <span class="ser_txt"> Mobile App Design</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="far fa-brush ser_icons"></i> <span class="ser_txt"> Graphic/Print Design</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-video ser_icons"></i> <span class="ser_txt"> Video Production</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="border">
+                        <img class="ser_img" src="resources/img/development.png" alt="">
+                        <h5 class="ser_content">Web Development</h5>
+                        <p class="ser_details">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+                        <div class="text">
+                            <i class="fal fa-laptop-code ser_icons"></i> <span class="ser_txt"> Content Management
+                                System</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-shopping-cart ser_icons"></i> <span class="ser_txt"> eCommerce
+                                Website</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-desktop ser_icons"></i> <span class="ser_txt"> Theme Development</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="far fa-cogs ser_icons"></i> <span class="ser_txt"> Digital Development</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-mobile ser_icons"></i> <span class="ser_txt"> Mobile App Development</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="border">
+                        <img class="ser_img" src="resources/img/marketing.png" alt="">
+                        <h5 class="ser_content">Digital Marketing</h5>
+                        <p class="ser_details">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+                        <div class="text">
+                            <i class="fal fa-search ser_icons"></i> <span class="ser_txt"> Search Engine
+                                Optimization</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-hand-point-up ser_icons"></i> <span class="ser_txt"> Pay-Per-Click</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-envelope ser_icons"></i> <span class="ser_txt"> Email Marketing</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="far fa-share ser_icons"></i> <span class="ser_txt"> Social Media Marketing</span>
+                        </div> <br>
+                        <div class="text">
+                            <i class="fal fa-desktop ser_icons"></i> <span class="ser_txt"> Display Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION END -->
+
+    <!-- SKILL SECTION START -->
+    <section id="skill_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 d-flex align-items-end justify-content-end">
+                    <img class="skill_img" src="resources/img/img1a.png" alt="">
+                </div>
+                <div class="col-xl-6">
+                    <span class="mini_text">My Skillset</span>
+                    <h2 class="skill_content">I specialize In <br>
+                        Building Design</h2>
+                    <div class="progressBar">
+                        <span class="title">branding & design</span>
+                        <div class="design"></div>
+                    </div>
+                    <div class="progressBar">
+                        <span class="title">web development</span>
+                        <div class="development"></div>
+                    </div>
+                    <div class="progressBar">
+                        <span class="title">digital marketing</span>
+                        <div class="marketing"></div>
+                    </div>
+                    <div class="progressBar">
+                        <span class="title"> product design & develop</span>
+                        <div class="product"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILL SECTION END -->
+
+    <!-- PORTFOLIO SECTION START -->
+    <section id="portfolio_sec">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-xl-6">
+                    <span class="mini_text"> Works </span>
+                    <h5 class="mb-5">Cool Stuffs</h5>
+                </div>
+                <div class="col-xl-6">
+                    <div class="portfolio_menu">
+                        <button class="active" data-filter="*"> All Works </button>
+                        <button data-filter=".web"> Web Design </button>
+                        <button data-filter=".branding"> Branding </button>
+                        <button data-filter=".lgo"> Logo </button>
+                        <button data-filter=".dsgn"> Design </button>
+                        <button data-filter=".uiux"> Ui/ux </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row portfolio_active">
+                <div class="col-xl-4 grid_item lgo">
+                    <div class="portfolio_single">
+                        <img src="resources/img/logo1.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>logo</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item uiux">
+                    <div class="portfolio_single">
+                        <img src="resources/img/uiux3.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>uiux</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item lgo">
+                    <div class="portfolio_single">
+                        <img src="resources/img/logo2.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>logo</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item branding">
+                    <div class="portfolio_single">
+                        <img src="resources/img/branding2.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>Branding</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item uiux">
+                    <div class="portfolio_single">
+                        <img src="resources/img/uiux1.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>uiux</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item branding">
+                    <div class="portfolio_single">
+                        <img src="resources/img/branding3.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>Branding</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item web">
+                    <div class="portfolio_single">
+                        <img src="resources/img/web1.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>web</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item lgo">
+                    <div class="portfolio_single">
+                        <img src="resources/img/logo3.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>logo</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item web">
+                    <div class="portfolio_single">
+                        <img src="resources/img/web3.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>web</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item dsgn">
+                    <div class="portfolio_single">
+                        <img src="resources/img/design2.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>design</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item branding">
+                    <div class="portfolio_single">
+                        <img src="resources/img/branding1.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>Branding</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item uiux">
+                    <div class="portfolio_single">
+                        <img src="resources/img/uiux2.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>uiux</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item web">
+                    <div class="portfolio_single">
+                        <img src="resources/img/web2.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>web</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 grid_item dsgn">
+                    <div class="portfolio_single">
+                        <img src="resources/img/design1.jpg" alt="">
+                        <div class="portfolio_text">
+                            <span>design</span>
+                            <h2> <a href="#"> Hamble Traingle </a> </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION END  -->
+
+
+    <!-- WORKING SECTION START -->
+    <section id="experience_sec">
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 d-flex justify-content-center">
+                        <div>
+                            <span class="mini_text">Any Project On Your Mind</span>
+                            <h6 class="project_heading">Any Project <br>
+                                On Your Mind.</h6>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 d-flex align-items-center justify-content-center">
+
+                        <div class="mt-5">
+                            <a href="#" class="btn cntct_btn"> <i class="fal fa-user"></i> get a quote</a>
+                            <a href="#" class="btn cntct_btn"> <i class="fal fa-envelope"></i> give a mail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience_details">
+            <span class="mini_text">experience</span>
+            <h4 class="experience_heading">Working Closely <br>
+                We Engineers</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">UX Designer</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">UI Designer</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">App Designer</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">CEO</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">CTO</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="experience_style">
+                            <div class="experience_icon">
+                                <i class="fal fa-briefcase"></i>
+                            </div>
+                            <div class="occupation_details">
+                                <span class="mini_text">Google Co. [2010-2014]</span>
+                                <h6 class="occupation">Office Asst.</h6>
+                            </div>
+                            <p class="working_details">Lorem ipsum dolor sitamet consectetur adipisicing elit, sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WORKING SECTION END -->
+
+    <!-- EDUCATION SECTION START -->
+    <section id="education_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <span class="mini_text mb-5">My Qualification</span>
+                    <h3 class="education">Education</h3>
+                    <div class="hsc_sec">
+                        <span class="mini_text">
+                            Humble Mimbo School & College. [2010-2014]
+                        </span>
+                        <h5 class="hsc">Higher Secondary Certificate</h5>
+                        <p class="hsc_details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna in aliqua. Ut enim ad minim veniam, quis
+                            nostrud.</p>
+                    </div>
+                    <div class="hsc_sec">
+                        <span class="mini_text">
+                            Humble Mimbo School & College. [2010-2014]
+                        </span>
+                        <h5 class="hsc">Computer Science</h5>
+                        <p class="hsc_details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna in aliqua. Ut enim ad minim veniam, quis
+                            nostrud.</p>
+                    </div>
+                    <div class="hsc_sec">
+                        <span class="mini_text">
+                            Humble Mimbo School & College. [2010-2014]
+                        </span>
+                        <h5 class="hsc">UX/CPD Develop</h5>
+                        <p class="hsc_details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna in aliqua. Ut enim ad minim veniam, quis
+                            nostrud.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 edu_img">
+                    <div class="edu_img_1"> <img src="resources/img/SSC-Certificate.jpg" alt=""> </div>
+                    <div class="edu_img_2"> <img src="resources/img/HSC-Certificate.jpg" alt=""> </div>
+                    <i class="far fa-check"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EDUCATION SECTION END -->
+
+    <!-- TEAM SECTION START -->
+    <section id="team_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <span class="mini_text">Angles</span> <br>
+                    <h4>Our Team</h4>
+                </div>
+
+                <div class="d-flex align-content-center team_details">
+                    <div class="col-xl-4">
+                        <div class="team">
+                            <img src="resources/img/shuvo.png" alt="">
+                            <div class="team_description">
+                                <h6 class="team_names">Rosalina D. William</h6>
+                                <span class="team_position">FOUNDER</span>
+                                <div class="team_icon">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-behance"></i>
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-github"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="team">
+                            <img src="resources/img/siam.jpg" alt="">
+                            <div class="team_description">
+                                <h6 class="team_names">Darwin B. Dumbde</h6>
+                                <span class="team_position">CEO</span>
+                                <div class="team_icon">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-behance"></i>
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-github"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="team">
+                            <img src="resources/img/afran.png" alt="">
+                            <div class="team_description">
+                                <h6 class="team_names">Hellboil Membol</h6>
+                                <span class="team_position">DESIGNER</span>
+                                <div class="team_icon">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-behance"></i>
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-github"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TEAM SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section id="contact_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <span class="mini_text">Contact</span>
+                    <h3> Contact Us </h3>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contact_details">
+                        <form action="">
+                            <label for="name"> Your Name <span style="color:red">**</span> </label> <br>
+                            <input type="text" placeholder="Enter your name...."> <br>
+                            <label for="email"> Email Address <span style="color:red">**</span> </label> <br>
+                            <input type="text" placeholder="Enter email address...."> <br>
+                            <label for="message"> Message <span style="color:red">**</span> </label> <br>
+                            <textarea name="message" placeholder="Enter your message...." cols="18" rows="5"></textarea>
+                            <a href="#" class="btn"> get a quote </a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-6 d-flex align-items-start">
+                    <!-- <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496722.98735327!2d85.8465794377655!3d23.442087717071722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1605246615218!5m2!1sen!2sbd"
+                        width="430" height="333" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe> -->
+
+                        <div id="map">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- PROJECT DONE SECTION START -->
+    <section id="project_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="bg"></div>
+                    <img src="resources/img/user.png" alt="">
+                    <span class="counter">789</span>
+                    <p class="project_details">happy client</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="bg"></div>
+                    <img src="resources/img/rocket.png" alt="">
+                    <span class="counter">495</span>
+                    <p class="project_details">project done</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="bg"></div>
+                    <img src="resources/img/cup.png" alt="">
+                    <span class="counter">998</span>
+                    <p class="project_details">cup of tea</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="bg"></div>
+                    <img src="resources/img/award.png" alt="">
+                    <span class="counter">78</span>
+                    <p class="project_details">awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT DONE SECTION END -->
+    <!-- TESTIMONIAL SECTION START -->
+    <section id="testimonial_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10">
+                    <span class="mini_text">testimonials</span>
+                    <h3>Sweet Clients</h3>
+
+                </div>
+                <div class="container">
+                    <div class="row tslider">
+                        <div class="col-xl-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"design quality"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/siam2.jpg"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Rosalina D. William</h6>
+                                                    <span class="mini_text">founder, google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"development"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/shuvo2.jpg"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Darwin B. Dumbde</h6>
+                                                    <span class="mini_text">founder, Xiaomi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"design quality"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/afran.png"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Hiliam B Baldes</h6>
+                                                    <span class="mini_text">founder, apple</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"development"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/shuvo2.jpg"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Darwin B. Dumbde</h6>
+                                                    <span class="mini_text">founder, Xiaomi</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"design quality"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/afran.png"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Hiliam B Baldes</h6>
+                                                    <span class="mini_text">founder, apple</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="testimonial_box">
+                                            <div class="container">
+                                                <div class="row d-flex align-items-center rating">
+                                                    <div class="col-xl-6 star"><i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i></div>
+                                                    <div class="col-xl-6">
+                                                        <h6 class="qaulity">"design quality"</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="testimonial_text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                veiusmod tempor incid idunt ut labore et dolore magna aliqua. Ut enim ad
+                                                minim veniam, quis nostrud exercit ation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat nickita.
+                                            </p>
+                                            <div class="container">
+                                                <img class="testimonial_img float-left" src="resources/img/siam2.jpg"
+                                                    alt="">
+                                                <div class="mt-2 float-left">
+                                                    <h6>Rosalina D. William</h6>
+                                                    <span class="mini_text">founder, google</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIAL SECTION END -->
+
+    <!-- NEWSFED SECTION START -->
+    <section id="newsfeed_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <span class="mini_text">news</span>
+                    <h3>news feed</h3>
+                </div>
+                <div class="col-xl-6 mt-5 d-flex justify-content-end">
+                    <div class="news_box mt-0">
+                        <img class="w-100 img-fluid" src="resources/img/news2.jpg" alt="">
+                        <span class="news_details ml-0"> <i class="far fa-calendar-alt"></i> 23rd mar 2019</span>
+                        <span class="news_details"><i class="far fa-comments"></i> 43 comments</span>
+                        <span class="news_details"> <i class="fal fa-user"></i> by habibur</span>
+                        <h3 class="news_heading">Lorem ipsum dolor sit amet, consectetur adipis
+                            elit, sed do eiusmod tempor incididunt.</h3>
+                        <p class="news_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <span class="mini_text"> read more</span>
+                    </div>
+                </div>
+                <div class="col-xl-6 mt-5">
+                    <div class="news_box">
+                        <span class="news_details"> <i class="far fa-calendar-alt"></i> 31 Jul 2019</span>
+                        <span class="news_details"><i class="far fa-comments"></i> 02 comments</span>
+                        <span class="news_details"> <i class="fal fa-user"></i> by abu saleh</span>
+                        <h3 class="news_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                    <div class="news_box">
+                        <span class="news_details"> <i class="far fa-calendar-alt"></i> 13 Feb 2019</span>
+                        <span class="news_details"><i class="far fa-comments"></i> 52 comments</span>
+                        <span class="news_details"> <i class="fal fa-user"></i> by sharif</span>
+                        <h3 class="news_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                    <div class="news_box">
+                        <span class="news_details"> <i class="far fa-calendar-alt"></i> 02 Oct 2019</span>
+                        <span class="news_details"><i class="far fa-comments"></i> 15 comments</span>
+                        <span class="news_details"> <i class="fal fa-user"></i> by al amin</span>
+                        <h3 class="news_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                    <div class="news_box">
+                        <span class="news_details"> <i class="far fa-calendar-alt"></i> 30 Dec 2019</span>
+                        <span class="news_details"><i class="far fa-comments"></i> 21 comments</span>
+                        <span class="news_details"> <i class="fal fa-user"></i> by romy</span>
+                        <h3 class="news_heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWSFED SECTION END -->
+    <!-- FOOTER SECTION START -->
+    <footer id="footer_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 d-flex justify-content-center mt-5">
+                    <div>
+                        <h1 class="footer_logo">Hobi<span style="color:red">.</span></h1>
+                        <p>Minimal & Creative Portfolio/CV/Biodata <br> Solution in One Platform.</p>
+                        <div class="footer_icon">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-behance"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 d-flex justify-content-start">
+                    <div class="footer_work">
+                        <h3 class="footer_heading">I’m a digital designer living in United States. <br>
+                            Apart from eating burger</h3>
+                        <div class="row mt-5">
+                            <div class="col-xl-4">
+                                <span>sent mail</span>
+                                <p>info@webmail.com
+                                    career.webmail.com</p>
+                            </div>
+                            <div class="col-xl-4">
+                                <span>make call </span>
+                                <p>+864 78558 68575
+                                    +(786) 7537 7658 89 0</p>
+                            </div>
+                            <div class="col-xl-4">
+                                <span>get in touch</span>
+                                <p>16/A, Hamburger City <br>
+                                    New York, US</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+   
+
     <!-- JS HERE -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="resources/js/jquery-modal-video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
+
+    <script src="resources/js/jQuery.rProgressbar.min.js"></script>
+    <script src="resources/js/jquery.barfiller.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
+        integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css"
+        integrity="sha512-heyoieAHmpAL3BdaQMsbIOhVvGb4+pl4aGCZqWzX/f1BChRArrBy/XUZDHW9WVi5p6pf92pX4yjkfmdaIYa2QQ=="
+        crossorigin="anonymous" />
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="resources/js/jquery.scrollUp.min.js"></script>
+    <script src="resources/js/jquery.nav.js"></script>
+    <!-- Google Map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAM9uRcdtQXQUB-dLrshGlcclQ5ouI0Qg"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"></script>
+
     <script src="resources/js/main.js"></script>
 </body>
 
